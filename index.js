@@ -148,3 +148,12 @@ for(var i=1; i<finances.length; i++){
   
 }
 console.log('Greatest Increase in Profits/Losses: ' + maxProfitLoss);
+
+var minProfitLoss = finances[0][1];
+for(var i=1; i<finances.length; i++){
+  if (finances[i][1] < minProfitLoss){
+    minProfitLoss = finances[i][1];
+  }
+  
+}
+console.log('Greatest Decrease in Profits/Losses: ' + minProfitLoss);
