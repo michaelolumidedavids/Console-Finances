@@ -142,6 +142,9 @@ console.log('Average Change: ' + averageChange)
 
 var maxProfitLoss = finances[0][1];
 for(var i=1; i<finances.length; i++){
-  maxProfitLoss = finances[i][1];
+  if (finances[i][1] > maxProfitLoss){
+    maxProfitLoss = finances[i][1];
+  }
+  
 }
 console.log(maxProfitLoss);
