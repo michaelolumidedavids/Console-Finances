@@ -147,4 +147,4 @@ for(var i=1; i<finances.length; i++){
   }
   
 }
-console.log(maxProfitLoss);
+console.log('Greatest Increase in Profits/Losses: ' + maxProfitLoss);
