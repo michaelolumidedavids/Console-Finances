@@ -140,8 +140,8 @@ let averageChange = total/(totalMonths-1);
 console.log('Average Change: ' + averageChange)
 
 
-var maxProfitLoss = 0
-for(var i=0; i<finances.length; i++){
+var maxProfitLoss = finances[0][1];
+for(var i=1; i<finances.length; i++){
   maxProfitLoss = finances[i][1];
 }
 console.log(maxProfitLoss);
